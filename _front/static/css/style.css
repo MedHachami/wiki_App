@@ -1,0 +1,422 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    background-color: #222831;
+    color: #fff;
+}
+/* Begin Login/ Register */
+.login{
+    color: #EEEEEE;
+}
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+
+
+.ftco-section {
+    padding: 7em 0; }
+  
+  .ftco-no-pt {
+    padding-top: 0; }
+  
+  .ftco-no-pb {
+    padding-bottom: 0; }
+  
+  .heading-section {
+    font-size: 28px;
+    color: #000; }
+  
+  .img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; }
+  
+  .login-wrap {
+    position: relative;
+    background: #EEEEEE;
+    /* color: #000; */
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    -webkit-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24); }
+    .login-wrap h3 {
+      font-weight: 400;
+      font-size: 18px;
+      color: #222831;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    .login-wrap p {
+      color: #222831; }
+    .login-wrap .img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 0 auto;
+      margin-bottom: 20px; }
+  
+  .form-group {
+    position: relative; }
+    .form-group .icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 20px;
+      height: 48px;
+      background: transparent;
+      font-size: 18px; }
+      .form-group .icon span {
+        color: #00ADB5; }
+  
+  .form-control {
+    height: 48px;
+    background: transparent;
+    color: #00ADB5 !important;
+    font-size: 14px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-left: 30px;
+    padding-right: 0;
+    letter-spacing: 1px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    @media (prefers-reduced-motion: reduce) {
+      .form-control {
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none; } }
+    .form-control::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: #222831!important; }
+    .form-control::-moz-placeholder {
+      /* Firefox 19+ */
+      color: rgba(255, 255, 255, 0.8) !important; }
+    .form-control:-ms-input-placeholder {
+      /* IE 10+ */
+      color: rgba(255, 255, 255, 0.8) !important; }
+    .form-control:-moz-placeholder {
+      /* Firefox 18- */
+      color: rgba(255, 255, 255, 0.8) !important; }
+    .form-control:focus, .form-control:active {
+      outline: none !important;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      background: rgba(0, 0, 0, 0.07);
+      border-color: #b689b0; }
+      .btn{
+        color: #222831 !important;
+      }
+      .btn:hover{
+        background-color: #222831 !important;
+        color: #fff !important;
+      }
+  
+  .text a {
+    text-transform: uppercase; }
+  
+  .checkbox-wrap {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  
+  /* Hide the browser's default checkbox */
+  .checkbox-wrap input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "\f0c8";
+    font-family: "FontAwesome";
+    position: absolute;
+    color: rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    margin-top: -4px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    @media (prefers-reduced-motion: reduce) {
+      .checkmark:after {
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none; } }
+  
+  /* Show the checkmark when checked */
+  .checkbox-wrap input:checked ~ .checkmark:after {
+    display: block;
+    content: "\f14a";
+    font-family: "FontAwesome";
+    color: rgba(0, 0, 0, 0.2); }
+  
+  /* Style the checkmark/indicator */
+  .checkbox-primary {
+    color: #b689b0; }
+    .checkbox-primary input:checked ~ .checkmark:after {
+      color: #b689b0; }
+  
+.btn-signIn{
+    background-color: red;
+}
+
+.link{
+    color: #00ADB5;
+}
+.link:hover{
+    padding-left: 4px;
+}
+.register-title{
+    color: #0d6efd;
+}
+
+#alert1 , #alert2{
+    position: fixed;
+    width: 40%;
+    text-align: center;
+    font-size: 20px;
+    transform: translateX(-50%);  
+    left: 50%;
+    top: 15%;
+    transition: opacity 0.3s, transform 0.3s;
+    /* z-index: 1000; */
+    opacity: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#alert1.show , #alert2.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-100%);
+  z-index: 10;
+}
+.error{
+  border-bottom: 3px solid red;
+}
+/* End register / login */
+
+/* Add ticket */
+#selected-users{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  border: 1px solid gray;
+  width: 100%;
+  height: auto;
+  min-height: 70px;
+  flex-wrap: wrap;
+}
+.user{
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+ 
+  width: 32%;
+  
+}
+
+
+.username{
+  margin-top: 8px;
+  font-size: 12px;
+}
+.delete-user{
+  cursor: pointer;
+}
+.inputfile{
+  height: 100%!important;
+    right: 16px!important;
+}
+
+.upd-del-Btn{
+  position: relative;
+    left: 65%;
+    bottom: 35px;
+    gap: 8px;
+}
+.numOfTask{
+  position: relative;
+    left: 68%;
+    bottom: 35px;
+}
+.sendIcon{
+  font-size: 2rem!important;position: relative;right: 45px;margin-top: 7px;
+}
+.sendIcon:hover{
+  color: #0d6efd;
+  cursor: pointer;
+}
+.commentContainer{
+  gap: 15px;
+  padding: 20px 5px;
+  
+}
+.seeAll{
+  position: relative;
+  left: 70%;
+  bottom: 15px;
+  margin-bottom: -18px;
+  width: 30%;
+  text-align: center;
+  /* border: 1Px solid red; */
+}
+.seeAll:hover{
+  cursor: pointer;
+}
+.comment{
+  /* border: 1Px solid red; */
+  /* height:42px; */
+  /* height: auto; */
+  min-height: 60px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: hwb(0 96% 4%);
+  padding: 4px 10px;
+  border-radius: 10px;
+}
+
+.comment h5{
+  color: #000;
+  font-size: 16px;
+}
+.comment p{
+  font-size: 14px;
+}
+/* End ticket */
+
+.hide{
+  display: none;
+  border: 1px solid red;
+}
+.filter-container{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #f4fffe;
+  background-image: none;
+  flex: 1;
+  padding: 0 .5em;
+  color: #000;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #5c6664;
+  overflow: hidden;
+  border-radius: .35em;
+  border: 1px solid black;
+}
+
+option {
+  text-align: center;
+}
+
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #f4fffe;
+  /* border-bottom: 1px solid black; */
+
+  cursor: pointer;
+  pointer-events: none;
+  transition: .25s all ease;
+}
+
+.select:hover::after {
+  color: #00b9a8;
+}
+
+.wiki-container{
+  margin-bottom: 36rem;
+  margin-top: 30px;
+}
+
+/* Categories */
+.categories-card *{
+  /* border: 1px solid red; */
+}
+.categories-card{
+  padding: 30px 20px;
+  width: 25%;
+  border-radius: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+.categories-card h5{
+  color: #000;
+  font-size: 24px;
+}
+.categories-card .description{
+  font-size: 18px;
+}
+
+.category-btn button{
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .categories-card{
+    flex-direction: column;
+    width: 70%;
+  }
+
+}
